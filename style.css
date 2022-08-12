@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    background-color: #183059;
+    font-family: 'Questrial', sans-serif;
+}
+
+.Heading {
+    text-align: center;
+    color: #F6F4F3;
+    padding-top: 32vh;
+}
+
+.Heading > h1 {
+    font-size: 48px;
+}
+
+.Heading > p{
+    padding-top: 16px;
+    font-size: 24px;
+}
+
+.Rate {
+    text-align: center;
+    color: #F6F4F3;
+    padding-top: 16px;
+}
+
+.converter {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    color: #F6F4F3;
+    text-align: center;
+    padding-top: 24px;
+}
+
+label {
+    padding-right: 12px;
+    font-size: 24px;
+}
+
+select {
+    color: #F6F4F3;
+    font-size: 24px;
+}
+
+option {
+    color: #F6F4F3;
+    width: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+input {
+    color: #F6F4F3;
+    font-size: 24px;
+    width: 140px;
+}
+
+.icon {
+    font-size: 24px;
+}
