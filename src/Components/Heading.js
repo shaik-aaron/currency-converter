@@ -4,7 +4,7 @@ export default function Heading() {
       return (
             <div className="Heading">
                   <h1>CURRENCY CONVERTER</h1>
-                  <p>A website that allows you to converts a currency of your choosing to INR.</p>
+                  <p>A website that allows you to convert a currency of your choice to INR.</p>
             </div>
       )
 }
