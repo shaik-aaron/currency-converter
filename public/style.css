@@ -17,6 +17,7 @@
 .Heading > p{
     padding-top: 16px;
     font-size: 24px;
+    height: 100%;
 }
 
 .Rate {
@@ -32,11 +33,13 @@
     color: #F6F4F3;
     text-align: center;
     padding-top: 24px;
+    height: 55vh;
 }
 
 label {
     padding-right: 12px;
     font-size: 24px;
+    border: #F6F4F3;
 }
 
 select {
@@ -62,4 +65,57 @@ input {
 
 .icon {
     font-size: 24px;
+}
+
+.Footer {
+    bottom: 0;
+    text-align: center;
+    background-color: #F6F4F3;
+    height: 160px;
+}
+
+.Footer > h2 {
+    color: #183059;
+    background-color: #F6F4F3;
+    padding-top: 24px;
+}
+
+.Logos {
+    padding-top: 24px;
+    width: 240px;
+    display: flex;
+    background-color: #F6F4F3;
+    color: #F6F4F3;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.logo {
+    font-size: 32px;
+    border-radius: 2px;
+}
+
+.Footer > p{
+    background-color: #F6F4F3;
+    color: #183059;
+    font-size: 16px;
+    padding-top: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+    .converter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Heading > p{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
 }

@@ -21,7 +21,8 @@ export default function Converter() {
 	useEffect(() => {
 		const fetchApiValues = async() => {
 			try {
-				const response = await fetch('https://exchangerate-api.p.rapidapi.com/rapid/latest/INR', options);
+				const response = await fetch('https://exchangerate-api.p.rapidapi.com/rapid/latest/INR', 
+				options);
 				const value = await response.json();
 				setRates(Object.keys(value.rates));
 				setRateValues(value.rates);
@@ -30,9 +31,8 @@ export default function Converter() {
 			}
 		};
 
-		fetchApiValues();
+		fetchApiValues(); //eslint-disable-next-line
 	}, []);
-			console.log(rateValues);
 			const currencyValues = rates.map(rate => {
 		return <option className={rate}>{rate}</option>
 	})
@@ -52,7 +52,7 @@ export default function Converter() {
 			<div className='icon'>
 				<FontAwesomeIcon icon={faArrowRight} />
 			</div>
-			<p>INR Value: {(amount*(1/rateValues[rate])).toLocaleString('en-IN')}</p>
+			<p>INR Value: {amount ? (amount*(1/rateValues[rate])).toLocaleString('en-IN') : 0}</p>
 		</div>
 	)
 }
